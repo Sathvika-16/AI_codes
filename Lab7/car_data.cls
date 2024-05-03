@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<doors &le; 3.0<br/>gini = 0.457<br/>samples = 1382<br/>value = [307, 55, 968, 52]<br/>class = unacc>, fillcolor="#85c3ef"] ;
+1 [label=<gini = 0.0<br/>samples = 464<br/>value = [0, 0, 464, 0]<br/>class = unacc>, fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<comfort &le; 2.5<br/>gini = 0.58<br/>samples = 918<br/>value = [307, 55, 504, 52]<br/>class = unacc>, fillcolor="#bfdff7"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<doors &le; 4.5<br/>gini = 0.524<br/>samples = 222<br/>value = [65, 10, 138, 9]<br/>class = unacc>, fillcolor="#a3d1f3"] ;
+2 -> 3 ;
+4 [label=<gini = 0.547<br/>samples = 119<br/>value = [40, 6, 69, 4]<br/>class = unacc>, fillcolor="#b6dbf5"] ;
+3 -> 4 ;
+5 [label=<gini = 0.488<br/>samples = 103<br/>value = [25, 4, 69, 5]<br/>class = unacc>, fillcolor="#8fc8f0"] ;
+3 -> 5 ;
+6 [label=<comfort &le; 4.5<br/>gini = 0.595<br/>samples = 696<br/>value = [242, 45, 366, 43]<br/>class = unacc>, fillcolor="#c9e4f8"] ;
+2 -> 6 ;
+7 [label=<comfort &le; 3.5<br/>gini = 0.597<br/>samples = 463<br/>value = [166, 30, 239, 28]<br/>class = unacc>, fillcolor="#cee7f9"] ;
+6 -> 7 ;
+8 [label=<doors &le; 4.5<br/>gini = 0.579<br/>samples = 233<br/>value = [80, 14, 127, 12]<br/>class = unacc>, fillcolor="#c2e1f7"] ;
+7 -> 8 ;
+9 [label=<gini = 0.548<br/>samples = 113<br/>value = [37, 6, 66, 4]<br/>class = unacc>, fillcolor="#b3daf5"] ;
+8 -> 9 ;
+10 [label=<gini = 0.604<br/>samples = 120<br/>value = [43, 8, 61, 8]<br/>class = unacc>, fillcolor="#d1e8f9"] ;
+8 -> 10 ;
+11 [label=<doors &le; 4.5<br/>gini = 0.613<br/>samples = 230<br/>value = [86, 16, 112, 16]<br/>class = unacc>, fillcolor="#dbedfa"] ;
+7 -> 11 ;
+12 [label=<gini = 0.615<br/>samples = 113<br/>value = [42, 7, 55, 9]<br/>class = unacc>, fillcolor="#dbedfa"] ;
+11 -> 12 ;
+13 [label=<gini = 0.612<br/>samples = 117<br/>value = [44, 9, 57, 7]<br/>class = unacc>, fillcolor="#dceefa"] ;
+11 -> 13 ;
+14 [label=<doors &le; 4.5<br/>gini = 0.588<br/>samples = 233<br/>value = [76, 15, 127, 15]<br/>class = unacc>, fillcolor="#bfdff7"] ;
+6 -> 14 ;
+15 [label=<gini = 0.583<br/>samples = 117<br/>value = [37, 7, 65, 8]<br/>class = unacc>, fillcolor="#baddf6"] ;
+14 -> 15 ;
+16 [label=<gini = 0.593<br/>samples = 116<br/>value = [39, 8, 62, 7]<br/>class = unacc>, fillcolor="#c4e2f7"] ;
+14 -> 16 ;
+}
